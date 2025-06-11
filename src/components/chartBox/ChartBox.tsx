@@ -19,11 +19,11 @@ export const ChartBox = (props: Props) => {
         <div className="title">
           <img src={props.icon} alt="" />
           <span>{props.title}</span>
-                  </div>
-          <h1>{props.number}</h1>
-          <Link to="/" style={{ color: props.color }}>
-            view all
-          </Link>
+        </div>
+        <h1>{props.number}</h1>
+        <Link to="/" style={{ color: props.color }}>
+          view all
+        </Link>
       </div>
       <div className="chartInfo">
         <div className="chart">
@@ -52,7 +52,7 @@ export const ChartBox = (props: Props) => {
             className="percentage"
             style={{ color: props.percentage < 0 ? "tomato" : "limegreen" }}
           >
-            {props.percentage}
+            {props.percentage}%
           </span>
           <span className="duration">this month</span>
         </div>

@@ -169,7 +169,7 @@ export const topDealUsers = [
 
 export const chartBoxUser = {
   color: "#8884d8",
-  icon: "/userIcon.svg",
+  icon: "fas fa-users",
   title: "Total Users",
   number: "11.238",
   dataKey: "users",
@@ -187,7 +187,7 @@ export const chartBoxUser = {
 
 export const chartBoxProduct = {
   color: "skyblue",
-  icon: "/productIcon.svg",
+  icon: "/cart-shopping",
   title: "Total Products",
   number: "238",
   dataKey: "products",

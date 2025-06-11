@@ -26,7 +26,7 @@
             width: 100%;
         }
 
-        .text{
+        .texts{
             display: flex;
             flex-direction: column;
             text-align: right;
@@ -39,6 +39,7 @@
 
         .duration{
             font-size: 14px;
+            color: #888;
         }
        }
 }
