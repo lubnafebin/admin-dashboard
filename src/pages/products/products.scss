@@ -1,2 +1,14 @@
-.products{
+.products {
+    padding-left: 10px;
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 5px;
+
+    button {
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
 }
