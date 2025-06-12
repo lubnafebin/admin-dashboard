@@ -2,6 +2,7 @@ import { DataGrid, type GridColDef } from "@mui/x-data-grid";
 import "./dataTable.scss";
 import { GridToolbar } from "@mui/x-data-grid/internals";
 import { Link } from "react-router-dom";
+import { Visibility, Delete } from "@mui/icons-material";
 
 type propsType = {
   rows: object[];
@@ -10,28 +11,26 @@ type propsType = {
 };
 
 export const DataTable = (props: propsType) => {
+  const handleDelete = (id: number) => {
+    console.log(`Delete row with id: ${id}`);
+  };
 
-    const handleDelete=(id:number)=>{
-
-        console.log(`Delete row with id: ${id}`);     
-    }
-
-    const actionColumn: GridColDef ={
+  const actionColumn: GridColDef = {
     field: "action",
     headerName: "Action",
-    width: 150,
+    width: 80,
     renderCell: (params) => {
       return (
         <div className="action">
-            <Link to={`/${props.slug}/${params.row.id}`}>
-            <img src="./view.png" alt="" />
-            </Link>
-          <div className="delete" onClick={()=>handleDelete(params.row.id)}>
-            <img src="./delete.png" alt="" />
+          <Link to={`/${props.slug}/${params.row.id}`}>
+            <Visibility />
+          </Link>
+          <div className="delete" onClick={() => handleDelete(params.row.id)}>
+            <Delete />
           </div>
         </div>
       );
-    }
+    },
   };
 
   return (

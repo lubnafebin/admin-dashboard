@@ -4,41 +4,50 @@ import "./users.scss";
 import { userRows } from "../../data";
 export const Users = () => {
   const columns: GridColDef[] = [
-    { field: "id", headerName: "ID", width: 90 },
+    { field: "id", headerName: "ID", width: 60 },
     {
       field: "avatar",
       headerName: "Avatar",
-      width: 100,
+      width: 80,
       renderCell: (params) => (
         <img src={params.row.img || "./no-avatar.png"} alt="" />
       ),
     },
     {
-      field: "status",
-      headerName: "Status",
-      width: 120,
-      type: "boolean",
-    },
-    {
       field: "firstName",
       headerName: "First name",
-      width: 150,
+      width: 120,
       editable: true,
     },
     {
       field: "lastName",
       headerName: "Last name",
-      width: 150,
+      width: 120,
+      editable: true,
+    },   
+    {
+      field: "email",
+      headerName: "Email",
+      width: 180,
       editable: true,
     },
     {
-      field: "fullName",
-      headerName: "Full name",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
-      width: 160,
-      valueGetter: (value, row) =>
-        `${row.firstName || ""} ${row.lastName || ""}`,
+      field: "phone",
+      headerName: "Phone",
+      width: 120,
+      editable: true,
+    },
+    {
+      field: "createdAt",
+      headerName: "Created At",
+      width: 100,
+      editable: false,
+    },
+    {
+      field: "verified",
+      headerName: "Verified",
+      width: 100,
+      type: "boolean",
     },
   ];
   return (
