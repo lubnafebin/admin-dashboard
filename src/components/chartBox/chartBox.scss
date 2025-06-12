@@ -1,45 +1,45 @@
-.chartBox{
+.chartBox {
+  display: flex;
+  height: 100%;
+
+  .boxInfo {
     display: flex;
-    height: 100%;
+    flex-direction: column;
+    flex: 3;
+    justify-content: center;
 
-    .boxInfo{
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        justify-content: center;
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
 
-        .title{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+  .chartInfo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .chart {
+      width: 100%;
+      height: 100%;
     }
 
-    .chartInfo{
-        flex: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; 
+    .texts {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+    }
 
-        .chart{
-            height: 100px;
-            width: 100%;
-        }
+    .percentage {
+      font-weight: bold;
+      font-size: 20px;
+    }
 
-        .texts{
-            display: flex;
-            flex-direction: column;
-            text-align: right;
-        }
-
-        .percentage{
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .duration{
-            font-size: 14px;
-            color: #888;
-        }
-       }
+    .duration {
+      font-size: 14px;
+      color: #888;
+    }
+  }
 }

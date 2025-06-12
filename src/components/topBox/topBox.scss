@@ -1,5 +1,6 @@
 .topBox{
     h1{
+        margin-top: 0;
         margin-bottom: 20px;
     }
     .list{
@@ -9,7 +10,6 @@
             align-items: center;
             justify-content: space-between;
             margin-bottom: 30px;
-            gap: 40px;
 
             .user{
                 display: flex;
