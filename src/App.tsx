@@ -8,6 +8,8 @@ import { Home } from "./pages/home/Home";
 import { Users } from "./pages/users/Users";
 import { Products } from "./pages/products/Products";
 import { Login } from "./pages/login/Login";
+import { User } from "./pages/user/User";
+import { Product } from "./pages/product/product";
 
 export default function App() {
   const Layout = () => {
@@ -33,6 +35,8 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="users" element={<Users />} />
         <Route path="products" element={<Products />} />
+        <Route path="users/:id" element={<User />} />
+        <Route path="products/:id" element={<Product />} />
       </Route>
       <Route path="login" element={<Login />} />
     </Routes>
