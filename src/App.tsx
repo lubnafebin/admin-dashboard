@@ -1,6 +1,5 @@
 import "./index.scss";
 import { Route, Routes, Outlet } from "react-router-dom";
-
 import { Footer } from "./components/footer/Footer";
 import { Menu } from "./components/menu/Menu";
 import { Navbar } from "./components/navbar/Navbar";
