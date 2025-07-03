@@ -41,7 +41,7 @@
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
 
     /* every card now spans the single column automatically */
