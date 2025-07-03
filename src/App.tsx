@@ -19,7 +19,7 @@ export default function App() {
           <div className="menuContainer">
             <Menu />
           </div>
-          <div className="ContentContainer">
+          <div className="contentContainer">
             <Outlet />
           </div>
         </div>

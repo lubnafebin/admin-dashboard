@@ -1,5 +1,4 @@
 .home {
-  padding-left: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(180px, auto);
@@ -26,4 +25,32 @@
     grid-column: span 2;
     grid-row: span 2;
   }
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    /* re‑span large boxes so they don’t overflow */
+    .box1,
+    .box4 {
+      grid-column: span 1; /* stay tall, but only 1 col */
+      grid-row: span 2;
+    }
+    .box7 {
+      grid-column: span 2; /* full width of 2‑col grid */
+      grid-row: span 2;
+    }
+  }
+
+  @media (max-width: 599px) {
+    grid-template-columns: 1fr;
+
+    /* every card now spans the single column automatically */
+    .box1,
+    .box4,
+    .box7 {
+      grid-column: span 1;
+      grid-row: auto; 
+    }
+  }
+
 }
